@@ -51,7 +51,7 @@ public class ReferenciaPersonalController {
         return null;
     }
 
-    @PutMapping("referenciasPersonales/{id}")
+    @PutMapping("referenciaspersonales/{id}")
     public ReferenciaPersonal putReferenciaPersonal(@PathVariable Long id, @RequestBody ReferenciaPersonal referenciaPersonal) {
         ReferenciaPersonal referenciaActual = referenciaPersonalService.findByid(id);
 
@@ -65,7 +65,7 @@ public class ReferenciaPersonalController {
         return referenciaPersonalService.save(referenciaActual);
     }
 
-    @DeleteMapping("/referenciasPersonales/{id}")
+    @DeleteMapping("/referenciaspersonales/{id}")
     public void deleteReferenciasPersonales(@PathVariable Long id) 
     {
        referenciaPersonalService.delete(id);
